@@ -1,0 +1,141 @@
+
+//Main content
+body{
+	background: #EAEBE5 !important;
+	color: #626262;
+	margin-top: 0px; 
+}
+h1,h2,h3{
+	color: #E74744;
+	text-weight: bold;
+}
+h2{
+ &.block-title{
+ 	margin-top: 0px;
+ 	}
+}
+
+//Regiones
+.region{
+	padding: 30px 50px !important;	
+} 
+.region-navigation-collapsible, .region-header{
+	padding: 0px !important;
+}
+.region-floor-1{
+	background: #5BBCAC;
+	color: #FFF;
+	text-align: center;
+	blockquote {
+		margin: 30px 0px 20px;
+		font-size: 30px;
+		border-left: 0px;
+		em{
+			color: #d31313;
+		}
+	}
+
+}
+ .region-floor-2,
+ .region-floor-3,
+ .region-floor-4{
+	text-align: center;
+}
+.region-floor-3{
+	background: #F6CA46;
+	color: #51346B;
+	.btn-danger{
+		border-radius: 0px;
+    	font-style: italic;
+	}
+}
+.img-responsive{
+	width: 100%;
+	max-height: 400px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.view-slide-principal{
+	.item{
+		img{
+			min-height: 300px;
+		}
+	}
+	.carousel-control{
+	   &.left{
+	   	.glyphicon{ 
+	   		&:before{
+	   			content: '<';
+	   			font-family: monospace;
+		   		font-weight: bold;
+				font-size: 54px;
+				   
+	   	 	}
+	   	 }
+	   }
+	    &.right{
+	   	.glyphicon{ 
+	   		&:before{
+   			    content: '>';
+   			    font-family: monospace;
+			    font-weight: bold;
+			    font-size: 54px;
+	   	 	}
+	   	 }
+	   }
+	}
+	.carousel-caption{
+		bottom: calc(50% - 120px);
+		background: rgba(255, 220, 83, 0.85);
+		padding: 20px 20px;
+		h3{
+			margin: 0px;
+			a{
+				letter-spacing: 0px;
+				color: #51346B;
+				text-shadow: none;
+				font-weight: bold;
+				font-size: 16px;
+				text-transform: none;
+			}
+		}
+		
+	}
+}
+
+.view-acciones{
+	margin: 50px 0px 40px;
+	.views-field{
+		margin: 20px 0px;
+		a{
+			font-weight: bold;
+		}
+		img{
+			max-height: 100px;
+		    max-width: 100px;
+		    display: inline-block;
+		}
+	}	
+}
+
+.footer{
+	margin-top: 0px;
+	background: #666;
+	border-top: none;
+    color: white;
+    .context-text{
+    	margin-top: 10px;
+    }
+    a{
+    	color: white;
+    	font-weight: bold;
+    }
+    .social-media-links--platforms{
+    	 a{
+	    	margin-right: 10px;
+	    	font-size: 20px;
+   		 }
+    }
+}
