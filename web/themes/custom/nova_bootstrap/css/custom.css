@@ -16,91 +16,134 @@ h2.block-title {
   margin-top: 0px;
 }
 
-/* line 19, ../scss/custom.scss */
+/*
+	BOTONES
+*/
+/* line 21, ../scss/custom.scss */
+.btn {
+  border-radius: 0px;
+}
+
+/* line 24, ../scss/custom.scss */
+.btn-info {
+  color: white;
+  background-color: #E74744;
+  border-color: #E74744;
+}
+
+/* line 29, ../scss/custom.scss */
+.btn-info:focus, .btn-info.focus {
+  color: white;
+  background-color: #df716f;
+  border-color: #E74744;
+}
+
+/* line 34, ../scss/custom.scss */
+.btn-info:hover {
+  color: white;
+  background-color: #df716f;
+  border-color: #E74744;
+}
+
+/*
+	REGIONES
+*/
+/* line 43, ../scss/custom.scss */
 .region {
   padding: 30px 50px !important;
 }
 
-/* line 22, ../scss/custom.scss */
+/* line 46, ../scss/custom.scss */
 .region-navigation-collapsible, .region-header {
   padding: 0px !important;
 }
 
-/* line 25, ../scss/custom.scss */
+/* line 49, ../scss/custom.scss */
 .region-floor-1 {
   background: #5BBCAC;
   color: #FFF;
   text-align: center;
 }
-/* line 29, ../scss/custom.scss */
+/* line 53, ../scss/custom.scss */
 .region-floor-1 blockquote {
   margin: 30px 0px 20px;
   font-size: 30px;
   border-left: 0px;
 }
-/* line 33, ../scss/custom.scss */
+/* line 57, ../scss/custom.scss */
 .region-floor-1 blockquote em {
   color: #d31313;
 }
 
-/* line 41, ../scss/custom.scss */
+/* line 65, ../scss/custom.scss */
 .region-floor-2,
 .region-floor-3,
 .region-floor-4 {
   text-align: center;
 }
 
-/* line 44, ../scss/custom.scss */
+/* line 68, ../scss/custom.scss */
 .region-floor-3 {
   background: #F6CA46;
   color: #51346B;
 }
-/* line 47, ../scss/custom.scss */
+/* line 71, ../scss/custom.scss */
 .region-floor-3 .btn-danger {
   border-radius: 0px;
   font-style: italic;
 }
 
-/* line 52, ../scss/custom.scss */
+/* line 76, ../scss/custom.scss */
 .img-responsive {
   width: 100%;
-  max-height: 400px;
 }
 
-/* line 56, ../scss/custom.scss */
+/* line 80, ../scss/custom.scss */
 .navbar {
   margin-bottom: 0px;
 }
 
-/* line 62, ../scss/custom.scss */
-.view-slide-principal .item img {
-  min-height: 300px;
+/* line 85, ../scss/custom.scss */
+.view-slide-principal .item {
+  height: 450px;
+  overflow: hidden;
 }
-/* line 69, ../scss/custom.scss */
+/* line 88, ../scss/custom.scss */
+.view-slide-principal .item img {
+  height: 100%;
+  position: absolute;
+  width: none !important;
+  max-width: none;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 102, ../scss/custom.scss */
 .view-slide-principal .carousel-control.left .glyphicon:before {
   content: '<';
   font-family: monospace;
   font-weight: bold;
   font-size: 54px;
 }
-/* line 80, ../scss/custom.scss */
+/* line 113, ../scss/custom.scss */
 .view-slide-principal .carousel-control.right .glyphicon:before {
   content: '>';
   font-family: monospace;
   font-weight: bold;
   font-size: 54px;
 }
-/* line 89, ../scss/custom.scss */
+/* line 122, ../scss/custom.scss */
 .view-slide-principal .carousel-caption {
   bottom: calc(50% - 120px);
   background: rgba(255, 220, 83, 0.85);
   padding: 20px 20px;
 }
-/* line 93, ../scss/custom.scss */
+/* line 126, ../scss/custom.scss */
 .view-slide-principal .carousel-caption h3 {
   margin: 0px;
 }
-/* line 95, ../scss/custom.scss */
+/* line 128, ../scss/custom.scss */
 .view-slide-principal .carousel-caption h3 a {
   letter-spacing: 0px;
   color: #51346B;
@@ -110,43 +153,123 @@ h2.block-title {
   text-transform: none;
 }
 
-/* line 108, ../scss/custom.scss */
+/* line 141, ../scss/custom.scss */
 .view-acciones {
   margin: 50px 0px 40px;
 }
-/* line 110, ../scss/custom.scss */
+/* line 143, ../scss/custom.scss */
 .view-acciones .views-field {
   margin: 20px 0px;
 }
-/* line 112, ../scss/custom.scss */
+/* line 145, ../scss/custom.scss */
 .view-acciones .views-field a {
   font-weight: bold;
 }
-/* line 115, ../scss/custom.scss */
+/* line 148, ../scss/custom.scss */
 .view-acciones .views-field img {
   max-height: 100px;
   max-width: 100px;
   display: inline-block;
 }
 
-/* line 123, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 .footer {
   margin-top: 0px;
   background: #666;
   border-top: none;
   color: white;
 }
-/* line 128, ../scss/custom.scss */
+/* line 161, ../scss/custom.scss */
 .footer .context-text {
   margin-top: 10px;
 }
-/* line 131, ../scss/custom.scss */
+/* line 164, ../scss/custom.scss */
 .footer a {
   color: white;
   font-weight: bold;
 }
-/* line 136, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 .footer .social-media-links--platforms a {
   margin-right: 10px;
   font-size: 20px;
+}
+
+/*
+ VIEWS EXPOSED FILTERS
+*/
+/* line 178, ../scss/custom.scss */
+.views-exposed-form {
+  margin-bottom: 50px;
+}
+/* line 180, ../scss/custom.scss */
+.views-exposed-form .form-item {
+  margin-right: 15px;
+}
+/* line 183, ../scss/custom.scss */
+.views-exposed-form .select-wrapper:after {
+  content: '' !important;
+}
+
+/* line 190, ../scss/custom.scss */
+.path-articulos .view-articulos .col {
+  padding: 10px;
+}
+/* line 193, ../scss/custom.scss */
+.path-articulos .view-articulos .col .views-field-title a {
+  margin: 20px 0px 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 204, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media {
+  padding-bottom: 20px;
+}
+/* line 206, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media img {
+  width: 220px;
+}
+/* line 209, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media .media-body {
+  padding-left: 16px;
+}
+/* line 211, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media .media-body .media-heading {
+  color: #E74744;
+  margin-bottom: 15px;
+}
+/* line 215, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media .media-body .filed-colaborator {
+  margin: 5px 0px 10px;
+}
+/* line 217, ../scss/custom.scss */
+#views-bootstrap-colaboradores-block-1 .media .media-body .filed-colaborator .strong {
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* line 227, ../scss/custom.scss */
+.messages__wrapper {
+  display: none;
+}
+
+/*
+	MEDIAS QUERY
+*/
+@media (min-width: 1200px) {
+  /* line 238, ../scss/custom.scss */
+  .view-slide-principal .item img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 246, ../scss/custom.scss */
+  .region-floor-2 {
+    padding: 30px 5px !important;
+  }
+  /* line 248, ../scss/custom.scss */
+  .region-floor-2 iframe {
+    height: 300px;
+  }
 }
